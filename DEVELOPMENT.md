@@ -1,0 +1,56 @@
+# Development
+This file will contain our project timeline and development. 
+- 11/17/20 
+  - Met with members for 1.5 hours to discuss project goals, create a team contract, and select a dataset to use.
+  - Determined that our next meeting would be on 11/21/20.
+- 11/21/20
+  - The group met to determine how to split up the workload. We looked more into the algorithms we have decided to explore and came up with a plan to implement them.
+  - Most of this week’s discussion and meeting was taken up by thinking about how we are planning to implement our graph-based data structure. We decided to split up the work evenly between the four of us –– and although this is tentative. 
+  - We will have 2 people, Alice and Rohan, working as a pair on the depth-first search (DFS) traversal and Kurskal’s algorithm. Jaden and Sumedh will be working as a pair on the graph code base and the PageRank.
+  - This meeting we talked about C++ library Armadillo, and how it will be incorporated in our PageRank algorithm.
+  - We attempted to start writing pseudo code.
+- 11/24/2020
+  - We looked into how we might split our code into classes/functions. The following is our breakdown as of now:
+    - Graph class
+    - Edge class
+    - Algorithm class
+      - DFS function
+      - Kruskal’s Algorithm function
+      - PageRank function
+  - We implemented some of the Graph class (using the code from lab_ml as guidance). We also began writing the skeleton of our Algorithm class, though we have no functionality implemented yet.
+  - To do:
+    - Figure out how to read in our data file and convert it into a graph structure.
+    - Begin testing our graph functionality.
+    - Look into how to implement our algorithm class more.
+    - Finish thinking about how to finish implementing graph class for easier algorithm implementation.
+    - Schedule meeting with our mentor hopefully during Thanksgiving break to get ideas about how to get weights for implementing a pathfinding algorithm.
+- 12/2/2020
+  - Had our mid-project check-in with our advisor.
+  - Decided to implement edge weights randomly for Kruskal's Algorithm.
+- 12/6/2020
+  - Add the following:
+    - Makefile
+    - catch folder
+    - tests folder
+  - Begin to add skeleton code in Algorithm constructor.
+  - Begin to add code for DFS.
+- 12/7/2020
+  - Update the Graph class (taken from lab_ml assignment).
+  - Edit Makefile so it works correctly.
+  - Test file functions from the Algorithm class.
+  - Finish the Algorithm constructor.
+    - The constructor builds our graph.
+    - Using this graph, we can now run our algorithms.
+- 12/10/2020
+  - Updated the graph class to have indexes for each vertex (using an unorderedmap key,value pair).
+  - Now there is a new vector that holds a number for each vertex (aka the people that text each other are now labelled with a number).
+  - Almost completely done with Kruskals, just need to add the return value (like pushing the vertexes into the vector), all other logic is there.
+  - Need to add test cases for kruskals and check how well it runs.
+- 12/10/2020 (later)
+  - Fix error in graph class.
+  - Finish Kruskals:
+    - Change Kruskals function to return a vector of edges instead of strings.
+    - Also have the Kruskals function write results to a txt file.
+  - Finish PageRank.
+  - Finish DFS.
+  - Create the results folder to hold the results of our algorithms.
